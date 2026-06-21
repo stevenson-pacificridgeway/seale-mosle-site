@@ -3,136 +3,142 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Seale Mosle | Global Financial Impact</title>
-<meta name="description" content="Seale Mosle, licensed financial professional with Global Financial Impact. Retirement strategies, life insurance, wealth building, and a business opportunity for those ready to build.">
+<title>Seale Mosle | Executive Marketing Director · Global Financial Impact</title>
+<meta name="description" content="Seale Mosle — Executive Marketing Director and GFI Success Club member, with $250,000 in personal cashflow over the last 12 months. Financial strategies for families and a proven business opportunity.">
 <style>
   :root{
-    --teal:#0f766e;
-    --teal-dark:#115e59;
-    --teal-light:#14b8a6;
-    --green:#16a34a;
-    --mint:#ecfdf5;
-    --ink:#0f172a;
-    --slate:#475569;
-    --line:#e2e8f0;
-    --white:#ffffff;
+    --teal:#0f766e; --teal-dark:#115e59; --teal-light:#14b8a6;
+    --green:#16a34a; --mint:#ecfdf5; --emerald:#10b981;
+    --navy:#0c1f3f; --navy2:#13294f; --gold:#e8b94a;
+    --ink:#0f172a; --slate:#475569; --line:#e2e8f0; --white:#fff;
   }
   *{box-sizing:border-box;margin:0;padding:0}
   html{scroll-behavior:smooth}
-  body{
-    font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Arial,sans-serif;
-    color:var(--ink);line-height:1.6;background:var(--white);-webkit-font-smoothing:antialiased;
-  }
+  body{font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Arial,sans-serif;color:var(--ink);line-height:1.6;background:var(--white);-webkit-font-smoothing:antialiased}
   a{color:inherit;text-decoration:none}
-  .wrap{max-width:1080px;margin:0 auto;padding:0 24px}
-  .btn{
-    display:inline-block;padding:14px 28px;border-radius:999px;font-weight:600;
-    font-size:1rem;cursor:pointer;transition:transform .15s ease,box-shadow .15s ease;border:none;
-  }
+  .wrap{max-width:1100px;margin:0 auto;padding:0 24px}
+  .btn{display:inline-block;padding:14px 28px;border-radius:999px;font-weight:600;font-size:1rem;cursor:pointer;transition:transform .15s,box-shadow .15s;border:none}
   .btn-primary{background:var(--teal-light);color:#06241f;box-shadow:0 6px 20px rgba(20,184,166,.35)}
   .btn-primary:hover{transform:translateY(-2px);box-shadow:0 10px 28px rgba(20,184,166,.45)}
-  .btn-ghost{background:transparent;color:var(--white);border:2px solid rgba(255,255,255,.55)}
+  .btn-ghost{background:transparent;color:#fff;border:2px solid rgba(255,255,255,.55)}
   .btn-ghost:hover{background:rgba(255,255,255,.12)}
   .btn-dark{background:var(--teal);color:#fff;box-shadow:0 6px 20px rgba(15,118,110,.3)}
   .btn-dark:hover{transform:translateY(-2px)}
 
+  /* GFI logo lockup (recreated) */
+  .gfi{display:inline-flex;align-items:center;gap:10px}
+  .gfi .mark{font-weight:800;letter-spacing:1px;background:#fff;color:var(--navy);padding:2px 7px;border-radius:4px;font-size:1rem;line-height:1.1}
+  .gfi .txt{line-height:1;color:#fff}
+  .gfi .txt b{display:block;font-weight:800;font-size:.95rem;letter-spacing:.5px}
+  .gfi .txt span{display:block;font-size:.6rem;letter-spacing:2.5px;color:rgba(255,255,255,.8);margin-top:2px}
+
   /* Header */
-  header{position:sticky;top:0;z-index:50;background:rgba(255,255,255,.92);backdrop-filter:blur(8px);border-bottom:1px solid var(--line)}
-  .nav{display:flex;align-items:center;justify-content:space-between;height:68px}
-  .logo{font-weight:800;font-size:1.15rem;letter-spacing:-.01em}
-  .logo span{color:var(--teal)}
-  .nav-links{display:flex;gap:28px;align-items:center}
-  .nav-links a{font-weight:500;color:var(--slate);font-size:.95rem}
-  .nav-links a:hover{color:var(--teal)}
-  .nav-cta{background:var(--teal);color:#fff!important;padding:9px 18px;border-radius:999px}
-  @media(max-width:720px){.nav-links a:not(.nav-cta){display:none}}
+  header{position:sticky;top:0;z-index:50;background:rgba(12,31,63,.95);backdrop-filter:blur(8px);border-bottom:1px solid rgba(255,255,255,.08)}
+  .nav{display:flex;align-items:center;justify-content:space-between;height:70px}
+  .nav-name{font-weight:800;color:#fff;font-size:1.1rem;letter-spacing:-.01em}
+  .nav-name span{color:var(--teal-light)}
+  .nav-links{display:flex;gap:26px;align-items:center}
+  .nav-links a{font-weight:500;color:rgba(255,255,255,.85);font-size:.95rem}
+  .nav-links a:hover{color:var(--teal-light)}
+  .nav-cta{background:var(--teal-light);color:#06241f!important;padding:9px 18px;border-radius:999px;font-weight:600}
+  @media(max-width:760px){.nav-links a:not(.nav-cta){display:none}}
 
   /* Hero */
-  .hero{
-    background:linear-gradient(135deg,#0f766e 0%,#115e59 45%,#065f46 100%);
-    color:#fff;padding:96px 0 110px;position:relative;overflow:hidden;
-  }
-  .hero::after{
-    content:"";position:absolute;right:-120px;top:-120px;width:420px;height:420px;border-radius:50%;
-    background:radial-gradient(circle,rgba(20,184,166,.45),transparent 70%);
-  }
-  .hero .wrap{position:relative;z-index:2}
-  .eyebrow{
-    display:inline-block;background:rgba(255,255,255,.14);border:1px solid rgba(255,255,255,.25);
-    padding:6px 16px;border-radius:999px;font-size:.85rem;font-weight:600;letter-spacing:.03em;margin-bottom:22px;
-  }
-  .hero h1{font-size:3rem;line-height:1.1;font-weight:800;letter-spacing:-.02em;max-width:760px}
-  .hero p.lead{font-size:1.2rem;margin-top:20px;max-width:620px;color:rgba(255,255,255,.9)}
-  .hero-actions{margin-top:36px;display:flex;gap:16px;flex-wrap:wrap}
-  @media(max-width:600px){.hero h1{font-size:2.1rem}.hero{padding:64px 0 76px}}
+  .hero{background:linear-gradient(135deg,#0c1f3f 0%,#13294f 50%,#0f766e 140%);color:#fff;padding:70px 0 90px;position:relative;overflow:hidden}
+  .hero::after{content:"";position:absolute;right:-140px;top:-120px;width:460px;height:460px;border-radius:50%;background:radial-gradient(circle,rgba(20,184,166,.4),transparent 70%)}
+  .hero .wrap{position:relative;z-index:2;display:grid;grid-template-columns:1.15fr .85fr;gap:48px;align-items:center}
+  @media(max-width:860px){.hero .wrap{grid-template-columns:1fr;text-align:center;gap:34px}}
+  .gfi-top{margin-bottom:22px}
+  @media(max-width:860px){.gfi-top{justify-content:center;display:flex}}
+  .hero h1{font-size:2.9rem;line-height:1.08;font-weight:800;letter-spacing:-.02em}
+  .role{display:inline-block;margin-top:14px;color:var(--teal-light);font-weight:700;letter-spacing:.06em;text-transform:uppercase;font-size:.9rem}
+  .hero p.lead{font-size:1.15rem;margin-top:16px;max-width:560px;color:rgba(255,255,255,.9)}
+  @media(max-width:860px){.hero p.lead{margin-left:auto;margin-right:auto}}
+  .hero-actions{margin-top:30px;display:flex;gap:14px;flex-wrap:wrap}
+  @media(max-width:860px){.hero-actions{justify-content:center}}
+
+  /* Headshot with ring + success-club chip */
+  .portrait{position:relative;justify-self:center}
+  .portrait img.face{width:300px;height:300px;border-radius:50%;display:block;border:6px solid rgba(255,255,255,.9);box-shadow:0 24px 60px rgba(0,0,0,.4)}
+  .portrait .glow{position:absolute;inset:-18px;border-radius:50%;background:conic-gradient(from 180deg,var(--teal-light),var(--emerald),var(--gold),var(--teal-light));filter:blur(22px);opacity:.55;z-index:-1}
+  .sc-chip{position:absolute;bottom:6px;right:-6px;background:#fff;border-radius:14px;padding:8px 14px 8px 10px;display:flex;align-items:center;gap:8px;box-shadow:0 10px 30px rgba(0,0,0,.25)}
+  .sc-chip img{width:42px;height:42px;object-fit:cover;border-radius:8px}
+  .sc-chip b{display:block;color:var(--navy);font-size:.8rem;line-height:1.1}
+  .sc-chip span{display:block;color:var(--teal);font-size:.68rem;font-weight:700;letter-spacing:.04em;text-transform:uppercase}
+  @media(max-width:480px){.portrait img.face{width:240px;height:240px}}
+
+  /* Milestone band */
+  .milestone{background:radial-gradient(1200px 400px at 80% -10%,rgba(20,184,166,.18),transparent),linear-gradient(180deg,#0a1a35,#0c1f3f);color:#fff;padding:70px 0;border-top:1px solid rgba(255,255,255,.06)}
+  .ms-grid{display:grid;grid-template-columns:1fr auto;gap:40px;align-items:center}
+  @media(max-width:760px){.ms-grid{grid-template-columns:1fr;text-align:center;gap:28px}}
+  .ms-kicker{color:var(--teal-light);font-weight:700;letter-spacing:.12em;text-transform:uppercase;font-size:.8rem}
+  .ms-num{font-size:4.6rem;font-weight:800;letter-spacing:-.03em;line-height:1;margin:6px 0 4px;background:linear-gradient(90deg,var(--gold),#f5d98a);-webkit-background-clip:text;background-clip:text;color:transparent}
+  @media(max-width:480px){.ms-num{font-size:3.2rem}}
+  .ms-sub{font-size:1.15rem;font-weight:600}
+  .ms-meta{margin-top:10px;color:rgba(255,255,255,.6);font-size:.9rem}
+  .ms-ring{position:relative;justify-self:center}
+  .ms-ring img{width:190px;height:190px;object-fit:cover;border-radius:20px;box-shadow:0 16px 40px rgba(0,0,0,.45)}
+  .ms-ring .cap{position:absolute;bottom:-14px;left:50%;transform:translateX(-50%);background:var(--emerald);color:#04241b;font-weight:800;font-size:.72rem;letter-spacing:.1em;text-transform:uppercase;padding:6px 14px;border-radius:999px;white-space:nowrap;box-shadow:0 8px 20px rgba(16,185,129,.4)}
 
   /* Section base */
   section.block{padding:84px 0}
-  .section-head{text-align:center;max-width:680px;margin:0 auto 56px}
+  .section-head{text-align:center;max-width:680px;margin:0 auto 52px}
   .section-head .kicker{color:var(--teal);font-weight:700;text-transform:uppercase;letter-spacing:.08em;font-size:.82rem}
   .section-head h2{font-size:2.1rem;font-weight:800;letter-spacing:-.02em;margin-top:10px}
   .section-head p{color:var(--slate);margin-top:14px;font-size:1.08rem}
 
-  /* Services grid */
-  .grid{display:grid;grid-template-columns:repeat(3,1fr);gap:24px}
+  .grid{display:grid;grid-template-columns:repeat(3,1fr);gap:22px}
   @media(max-width:860px){.grid{grid-template-columns:1fr 1fr}}
   @media(max-width:560px){.grid{grid-template-columns:1fr}}
-  .card{
-    background:#fff;border:1px solid var(--line);border-radius:18px;padding:30px 26px;transition:transform .18s ease,box-shadow .18s ease;
-  }
+  .card{background:#fff;border:1px solid var(--line);border-radius:18px;padding:28px 24px;transition:transform .18s,box-shadow .18s}
   .card:hover{transform:translateY(-4px);box-shadow:0 16px 40px rgba(15,118,110,.12)}
-  .card .ic{width:52px;height:52px;border-radius:14px;background:var(--mint);display:flex;align-items:center;justify-content:center;margin-bottom:18px;font-size:1.5rem}
-  .card h3{font-size:1.18rem;margin-bottom:8px}
-  .card p{color:var(--slate);font-size:.97rem}
+  .card .ic{width:50px;height:50px;border-radius:14px;background:var(--mint);display:flex;align-items:center;justify-content:center;margin-bottom:16px;font-size:1.4rem}
+  .card h3{font-size:1.15rem;margin-bottom:8px}
+  .card p{color:var(--slate);font-size:.96rem}
 
-  /* Two-column feature */
   .split{background:var(--mint)}
-  .split .wrap{display:grid;grid-template-columns:1fr 1fr;gap:56px;align-items:center}
-  @media(max-width:820px){.split .wrap{grid-template-columns:1fr;gap:36px}}
-  .split h2{font-size:2rem;font-weight:800;letter-spacing:-.02em;margin-bottom:18px}
+  .split .wrap{display:grid;grid-template-columns:1fr 1fr;gap:54px;align-items:center}
+  @media(max-width:820px){.split .wrap{grid-template-columns:1fr;gap:34px}}
+  .split h2{font-size:2rem;font-weight:800;letter-spacing:-.02em;margin-bottom:16px}
   .split .kicker{color:var(--green);font-weight:700;text-transform:uppercase;letter-spacing:.08em;font-size:.82rem}
-  .check{list-style:none;margin:22px 0}
+  .check{list-style:none;margin:20px 0}
   .check li{padding:9px 0 9px 34px;position:relative;color:var(--slate)}
   .check li::before{content:"✓";position:absolute;left:0;top:8px;color:#fff;background:var(--green);width:22px;height:22px;border-radius:50%;font-size:.8rem;display:flex;align-items:center;justify-content:center;font-weight:700}
-  .panel{
-    background:linear-gradient(135deg,#14b8a6,#0f766e);color:#fff;border-radius:22px;padding:40px;box-shadow:0 20px 50px rgba(15,118,110,.25);
-  }
-  .panel h3{font-size:1.5rem;margin-bottom:10px}
-  .panel ul{list-style:none;margin-top:18px}
+  .panel{background:linear-gradient(135deg,#14b8a6,#0f766e);color:#fff;border-radius:22px;padding:38px;box-shadow:0 20px 50px rgba(15,118,110,.25)}
+  .panel h3{font-size:1.4rem;margin-bottom:10px}
+  .panel ul{list-style:none;margin-top:16px}
   .panel ul li{padding:8px 0;border-bottom:1px solid rgba(255,255,255,.18);font-weight:500}
   .panel ul li:last-child{border-bottom:none}
 
   /* About */
-  .about .wrap{display:grid;grid-template-columns:280px 1fr;gap:48px;align-items:center}
+  .about .wrap{display:grid;grid-template-columns:300px 1fr;gap:48px;align-items:center}
   @media(max-width:760px){.about .wrap{grid-template-columns:1fr;text-align:center}}
-  .avatar{
-    width:240px;height:240px;border-radius:24px;margin:0 auto;
-    background:linear-gradient(135deg,#0f766e,#16a34a);display:flex;align-items:center;justify-content:center;
-    color:#fff;font-size:4rem;font-weight:800;box-shadow:0 16px 40px rgba(15,118,110,.25);
-  }
+  .about-photo{position:relative;justify-self:center}
+  .about-photo img{width:260px;height:260px;border-radius:24px;object-fit:cover;box-shadow:0 16px 40px rgba(12,31,63,.25)}
   .about h2{font-size:2rem;font-weight:800;margin-bottom:14px;letter-spacing:-.02em}
   .about p{color:var(--slate);margin-bottom:14px}
-  .badge{display:inline-block;background:var(--mint);color:var(--teal-dark);font-weight:600;padding:6px 14px;border-radius:999px;font-size:.85rem;margin-top:6px}
+  .badge{display:inline-block;background:var(--mint);color:var(--teal-dark);font-weight:600;padding:6px 14px;border-radius:999px;font-size:.85rem;margin:4px 4px 0 0}
 
   /* CTA */
-  .cta{background:linear-gradient(135deg,#0f172a,#115e59);color:#fff;text-align:center;padding:86px 0}
+  .cta{background:linear-gradient(135deg,#0c1f3f,#115e59);color:#fff;text-align:center;padding:86px 0}
   .cta h2{font-size:2.2rem;font-weight:800;letter-spacing:-.02em}
   .cta p{color:rgba(255,255,255,.85);max-width:560px;margin:16px auto 32px;font-size:1.1rem}
   .cta-actions{display:flex;gap:16px;justify-content:center;flex-wrap:wrap}
   .contact-line{margin-top:28px;font-size:.98rem;color:rgba(255,255,255,.8)}
   .contact-line a{color:#5eead4;font-weight:600}
 
-  footer{background:#0f172a;color:rgba(255,255,255,.7);padding:34px 0;text-align:center;font-size:.9rem}
-  footer .logo{color:#fff;font-size:1rem;margin-bottom:8px}
-  footer .disc{max-width:760px;margin:14px auto 0;font-size:.78rem;color:rgba(255,255,255,.45);line-height:1.5}
+  footer{background:#0a1a35;color:rgba(255,255,255,.7);padding:34px 0;text-align:center;font-size:.9rem}
+  footer .gfi{margin-bottom:10px}
+  footer .disc{max-width:780px;margin:14px auto 0;font-size:.78rem;color:rgba(255,255,255,.45);line-height:1.5}
 </style>
 </head>
 <body>
 
 <header>
   <div class="wrap nav">
-    <div class="logo">Seale&nbsp;<span>Mosle</span></div>
+    <div class="nav-name">Seale&nbsp;<span>Mosle</span></div>
     <nav class="nav-links">
+      <a href="#milestone">Milestone</a>
       <a href="#services">Services</a>
       <a href="#opportunity">Opportunity</a>
       <a href="#about">About</a>
@@ -144,12 +150,42 @@
 <!-- HERO -->
 <section class="hero">
   <div class="wrap">
-    <span class="eyebrow">Licensed Professional · Global Financial Impact</span>
-    <h1>Build a stronger financial future — and a business worth building.</h1>
-    <p class="lead">I'm Seale Mosle. I help families protect what matters and grow their wealth, and I mentor everyday people into rewarding careers in financial services.</p>
-    <div class="hero-actions">
-      <a class="btn btn-primary" href="#BOOKING_LINK">Book a Free Consultation</a>
-      <a class="btn btn-ghost" href="#opportunity">Explore the Opportunity</a>
+    <div>
+      <div class="gfi gfi-top">
+        <span class="mark">GFI</span>
+        <span class="txt"><b>GLOBAL</b><span>FINANCIAL IMPACT</span></span>
+      </div>
+      <h1>Helping families build wealth — and helping people build their future.</h1>
+      <div class="role">Executive Marketing Director · GFI</div>
+      <p class="lead">I'm Seale Mosle. I help families protect what matters and grow their wealth, and I mentor everyday people into rewarding careers in financial services.</p>
+      <div class="hero-actions">
+        <a class="btn btn-primary" href="#BOOKING_LINK">Book a Free Consultation</a>
+        <a class="btn btn-ghost" href="#opportunity">Explore the Opportunity</a>
+      </div>
+    </div>
+    <div class="portrait">
+      <div class="glow"></div>
+      <img class="face" src="seale-headshot.png" alt="Seale Mosle, Executive Marketing Director at Global Financial Impact">
+      <div class="sc-chip">
+        <img src="success-club-ring.png" alt="GFI Success Club">
+        <div><b>Success Club</b><span>Member</span></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- MILESTONE -->
+<section class="milestone" id="milestone">
+  <div class="wrap ms-grid">
+    <div>
+      <div class="ms-kicker">Money Milestone · GFI</div>
+      <div class="ms-num" id="counter" data-target="250000">$0</div>
+      <div class="ms-sub">in personal cashflow over the last 12 months</div>
+      <div class="ms-meta">Recognized March 2026 · GFI Success Club</div>
+    </div>
+    <div class="ms-ring">
+      <img src="success-club-ring.png" alt="GFI Success Club ring">
+      <span class="cap">Success Club</span>
     </div>
   </div>
 </section>
@@ -163,36 +199,12 @@
       <p>Through Global Financial Impact, I help you put a clear, personalized plan in place — built around education, not pressure.</p>
     </div>
     <div class="grid">
-      <div class="card">
-        <div class="ic">🛡️</div>
-        <h3>Life Insurance</h3>
-        <p>Protect your family's income and legacy with coverage matched to your real needs and budget.</p>
-      </div>
-      <div class="card">
-        <div class="ic">🌅</div>
-        <h3>Retirement Income</h3>
-        <p>Strategies designed to turn savings into reliable income you won't outlive.</p>
-      </div>
-      <div class="card">
-        <div class="ic">📈</div>
-        <h3>Wealth Building</h3>
-        <p>Smart, long-term approaches to help your money grow and work harder for you.</p>
-      </div>
-      <div class="card">
-        <div class="ic">🎓</div>
-        <h3>College Savings</h3>
-        <p>Plan ahead for education costs so the next generation starts strong.</p>
-      </div>
-      <div class="card">
-        <div class="ic">🔒</div>
-        <h3>Asset Protection</h3>
-        <p>Safeguard what you've built with the right mix of strategy and insurance solutions.</p>
-      </div>
-      <div class="card">
-        <div class="ic">🧭</div>
-        <h3>Financial Guidance</h3>
-        <p>A clear, jargon-free roadmap so you always understand the "why" behind every move.</p>
-      </div>
+      <div class="card"><div class="ic">🛡️</div><h3>Life Insurance</h3><p>Protect your family's income and legacy with coverage matched to your real needs and budget.</p></div>
+      <div class="card"><div class="ic">🌅</div><h3>Retirement Income</h3><p>Strategies designed to turn savings into reliable income you won't outlive.</p></div>
+      <div class="card"><div class="ic">📈</div><h3>Wealth Building</h3><p>Smart, long-term approaches to help your money grow and work harder for you.</p></div>
+      <div class="card"><div class="ic">🎓</div><h3>College Savings</h3><p>Plan ahead for education costs so the next generation starts strong.</p></div>
+      <div class="card"><div class="ic">🔒</div><h3>Asset Protection</h3><p>Safeguard what you've built with the right mix of strategy and insurance solutions.</p></div>
+      <div class="card"><div class="ic">🧭</div><h3>Financial Guidance</h3><p>A clear, jargon-free roadmap so you always understand the "why" behind every move.</p></div>
     </div>
   </div>
 </section>
@@ -208,7 +220,7 @@
         <li>Flexible, part-time or full-time — work on your terms</li>
         <li>Hands-on mentorship and a proven training system</li>
         <li>Help families while building real income and ownership</li>
-        <li>A team that grows together, not just a paycheck</li>
+        <li>Learn from a leader who's earned GFI Success Club recognition</li>
       </ul>
       <a class="btn btn-dark" href="#BOOKING_LINK">Schedule an Intro Call</a>
     </div>
@@ -228,14 +240,14 @@
 <!-- ABOUT -->
 <section class="block about" id="about">
   <div class="wrap">
-    <div>
-      <div class="avatar">SM</div>
-      <div style="text-align:center;margin-top:16px"><span class="badge">Licensed Financial Professional</span></div>
+    <div class="about-photo">
+      <img src="seale-headshot.png" alt="Seale Mosle">
+      <div style="margin-top:16px"><span class="badge">Executive Marketing Director</span><span class="badge">GFI Success Club</span></div>
     </div>
     <div>
       <h2>About Seale Mosle</h2>
-      <p>As a licensed professional with Global Financial Impact, I'm passionate about one thing: helping people make confident financial decisions. Whether you're protecting your family, planning for retirement, or building wealth for the future, my role is to educate and guide — never to pressure.</p>
-      <p>I also love opening doors. Through GFI, I help motivated people start and grow their own financial services business with real mentorship behind them. If you're ready for a strategy, a fresh start, or both, let's talk.</p>
+      <p>As Executive Marketing Director with Global Financial Impact, I'm passionate about one thing: helping people make confident financial decisions. Whether you're protecting your family, planning for retirement, or building wealth for the future, my role is to educate and guide — never to pressure.</p>
+      <p>That same drive earned me GFI Success Club recognition and a Money Milestone of $250,000 in personal cashflow over the last 12 months — proof of a model that works when you put people first. I love opening that same door for others, helping motivated people start and grow their own financial services business with real mentorship behind them.</p>
       <a class="btn btn-dark" href="#BOOKING_LINK" style="margin-top:8px">Let's Connect</a>
     </div>
   </div>
@@ -251,21 +263,45 @@
       <a class="btn btn-ghost" href="mailto:EMAIL_PLACEHOLDER">Email Me</a>
     </div>
     <div class="contact-line">
-      Call or text: <a href="tel:PHONE_PLACEHOLDER">[PHONE]</a> &nbsp;·&nbsp;
-      Email: <a href="mailto:EMAIL_PLACEHOLDER">[EMAIL]</a>
+      Call or text: <a href="tel:PHONE_PLACEHOLDER">[PHONE]</a> &nbsp;·&nbsp; Email: <a href="mailto:EMAIL_PLACEHOLDER">[EMAIL]</a>
     </div>
   </div>
 </section>
 
 <footer>
   <div class="wrap">
-    <div class="logo">Seale Mosle</div>
-    <div>Licensed Professional · Global Financial Impact</div>
+    <div class="gfi" style="justify-content:center">
+      <span class="mark">GFI</span>
+      <span class="txt"><b>GLOBAL</b><span>FINANCIAL IMPACT</span></span>
+    </div>
+    <div>Seale Mosle · Executive Marketing Director</div>
     <div style="margin-top:10px">&copy; <span id="yr"></span> Seale Mosle. All rights reserved.</div>
-    <div class="disc">This website is for general informational purposes only and does not constitute financial, tax, or legal advice. Insurance and financial products are offered through licensed professionals affiliated with Global Financial Impact. Availability of products and services may vary by state. Please consult a licensed professional regarding your specific situation.</div>
+    <div class="disc">This website is for general informational purposes only and does not constitute financial, tax, or legal advice. Insurance and financial products are offered through licensed professionals affiliated with Global Financial Impact. The $250,000 figure reflects personal cashflow recognized by GFI and is not a guarantee or projection of results; individual results vary. Availability of products and services may vary by state. Please consult a licensed professional regarding your specific situation.</div>
   </div>
 </footer>
 
-<script>document.getElementById('yr').textContent=new Date().getFullYear();</script>
+<script>
+  document.getElementById('yr').textContent=new Date().getFullYear();
+  (function(){
+    var el=document.getElementById('counter');
+    var target=+el.getAttribute('data-target');
+    var fmt=function(n){return '$'+Math.round(n).toLocaleString('en-US');};
+    var started=false;
+    function run(){
+      if(started) return; started=true;
+      var dur=1600, t0=null;
+      function step(ts){
+        if(!t0)t0=ts;
+        var p=Math.min((ts-t0)/dur,1);
+        var eased=1-Math.pow(1-p,3);
+        el.textContent=fmt(target*eased);
+        if(p<1)requestAnimationFrame(step);
+      }
+      requestAnimationFrame(step);
+    }
+    var io=new IntersectionObserver(function(e){e.forEach(function(x){if(x.isIntersecting)run();});},{threshold:.4});
+    io.observe(el);
+  })();
+</script>
 </body>
 </html>
