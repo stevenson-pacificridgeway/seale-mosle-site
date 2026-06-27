@@ -1,307 +1,425 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Seale Mosle | Executive Marketing Director · Global Financial Impact</title>
-<meta name="description" content="Seale Mosle — Executive Marketing Director and GFI Success Club member, with $250,000 in personal cashflow over the last 12 months. Financial strategies for families and a proven business opportunity.">
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Entos Advisory — Wealth, Seen From Within</title>
+<meta name="description" content="Entos Advisory — principal-led financial and life strategy for business owners, pre-retirees, and high earners. Life insurance, annuities, retirement income, and legacy planning. (Design concept — placeholder content.)" />
+<link rel="preconnect" href="https://fonts.googleapis.com" />
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,400;0,9..144,500;0,9..144,600;1,9..144,400&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet" />
 <style>
   :root{
-    --teal:#0f766e; --teal-dark:#115e59; --teal-light:#14b8a6;
-    --green:#16a34a; --mint:#ecfdf5; --emerald:#10b981;
-    --navy:#0c1f3f; --navy2:#13294f; --gold:#e8b94a;
-    --ink:#0f172a; --slate:#475569; --line:#e2e8f0; --white:#fff;
+    --ink:#0a0d13;
+    --ink-2:#0f141d;
+    --panel:#121925;
+    --line:rgba(214,178,110,0.18);
+    --text:#e9e4d8;
+    --muted:#a7a294;
+    --gold:#d8b46e;
+    --gold-soft:#e7cf9c;
+    --teal:#5fae9c;
+    --serif:"Fraunces",Georgia,serif;
+    --sans:"Inter",system-ui,sans-serif;
   }
   *{box-sizing:border-box;margin:0;padding:0}
   html{scroll-behavior:smooth}
-  body{font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Arial,sans-serif;color:var(--ink);line-height:1.6;background:var(--white);-webkit-font-smoothing:antialiased}
+  body{
+    background:var(--ink);
+    color:var(--text);
+    font-family:var(--sans);
+    font-weight:300;
+    line-height:1.65;
+    -webkit-font-smoothing:antialiased;
+    overflow-x:hidden;
+  }
+  .wrap{max-width:1180px;margin:0 auto;padding:0 28px}
+  .eyebrow{
+    font-family:var(--sans);font-weight:500;letter-spacing:.22em;
+    text-transform:uppercase;font-size:.72rem;color:var(--gold);
+  }
+  h1,h2,h3{font-family:var(--serif);font-weight:500;line-height:1.12;letter-spacing:-.01em}
+  h2{font-size:clamp(2rem,4.2vw,3.1rem)}
+  em{font-style:italic;color:var(--gold-soft)}
   a{color:inherit;text-decoration:none}
-  .wrap{max-width:1100px;margin:0 auto;padding:0 24px}
-  .btn{display:inline-block;padding:14px 28px;border-radius:999px;font-weight:600;font-size:1rem;cursor:pointer;transition:transform .15s,box-shadow .15s;border:none}
-  .btn-primary{background:var(--teal-light);color:#06241f;box-shadow:0 6px 20px rgba(20,184,166,.35)}
-  .btn-primary:hover{transform:translateY(-2px);box-shadow:0 10px 28px rgba(20,184,166,.45)}
-  .btn-ghost{background:transparent;color:#fff;border:2px solid rgba(255,255,255,.55)}
-  .btn-ghost:hover{background:rgba(255,255,255,.12)}
-  .btn-dark{background:var(--teal);color:#fff;box-shadow:0 6px 20px rgba(15,118,110,.3)}
-  .btn-dark:hover{transform:translateY(-2px)}
+  .demo-banner{
+    background:linear-gradient(90deg,#1a130a,#241a0c);
+    color:var(--gold-soft);text-align:center;font-size:.78rem;letter-spacing:.04em;
+    padding:8px 14px;border-bottom:1px solid var(--line);font-weight:400;
+  }
 
-  /* GFI logo lockup (recreated) */
-  .gfi{display:inline-flex;align-items:center;gap:10px}
-  .gfi .mark{font-weight:800;letter-spacing:1px;background:#fff;color:var(--navy);padding:2px 7px;border-radius:4px;font-size:1rem;line-height:1.1}
-  .gfi .txt{line-height:1;color:#fff}
-  .gfi .txt b{display:block;font-weight:800;font-size:.95rem;letter-spacing:.5px}
-  .gfi .txt span{display:block;font-size:.6rem;letter-spacing:2.5px;color:rgba(255,255,255,.8);margin-top:2px}
+  /* NAV */
+  header.nav{
+    position:sticky;top:0;z-index:50;
+    backdrop-filter:blur(12px);
+    background:rgba(10,13,19,.72);
+    border-bottom:1px solid var(--line);
+  }
+  .nav-inner{display:flex;align-items:center;justify-content:space-between;height:74px}
+  .brand{display:flex;align-items:center;gap:12px;font-family:var(--serif);font-size:1.28rem;letter-spacing:.02em}
+  .brand .mark{
+    width:34px;height:34px;border-radius:50%;
+    border:1px solid var(--gold);display:grid;place-items:center;
+    color:var(--gold);font-size:1rem;
+    box-shadow:0 0 22px rgba(216,180,110,.25);
+  }
+  .brand b{font-weight:600}
+  .brand span{color:var(--muted);font-weight:400;letter-spacing:.18em;font-size:.62rem;text-transform:uppercase}
+  nav.links{display:flex;align-items:center;gap:30px}
+  nav.links a{font-size:.86rem;color:var(--muted);font-weight:400;transition:color .2s}
+  nav.links a:hover{color:var(--text)}
+  .btn{
+    display:inline-block;font-family:var(--sans);font-weight:500;font-size:.84rem;
+    letter-spacing:.02em;padding:11px 22px;border-radius:2px;cursor:pointer;
+    border:1px solid var(--gold);color:var(--ink);background:var(--gold);
+    transition:transform .2s,box-shadow .2s,background .2s;
+  }
+  .btn:hover{box-shadow:0 0 26px rgba(216,180,110,.4);transform:translateY(-1px)}
+  .btn.ghost{background:transparent;color:var(--gold-soft);border-color:var(--line)}
+  .btn.ghost:hover{border-color:var(--gold);box-shadow:none;color:var(--text)}
+  .nav .btn{padding:9px 18px}
+  .menu-toggle{display:none;background:none;border:0;color:var(--text);font-size:1.5rem;cursor:pointer}
 
-  /* Header */
-  header{position:sticky;top:0;z-index:50;background:rgba(12,31,63,.95);backdrop-filter:blur(8px);border-bottom:1px solid rgba(255,255,255,.08)}
-  .nav{display:flex;align-items:center;justify-content:space-between;height:70px}
-  .nav-name{font-weight:800;color:#fff;font-size:1.1rem;letter-spacing:-.01em}
-  .nav-name span{color:var(--teal-light)}
-  .nav-links{display:flex;gap:26px;align-items:center}
-  .nav-links a{font-weight:500;color:rgba(255,255,255,.85);font-size:.95rem}
-  .nav-links a:hover{color:var(--teal-light)}
-  .nav-cta{background:var(--teal-light);color:#06241f!important;padding:9px 18px;border-radius:999px;font-weight:600}
-  @media(max-width:760px){.nav-links a:not(.nav-cta){display:none}}
+  /* HERO */
+  .hero{position:relative;padding:118px 0 120px;overflow:hidden}
+  .hero .glow{
+    position:absolute;top:-160px;left:50%;transform:translateX(-50%);
+    width:900px;height:760px;
+    background:radial-gradient(circle at 50% 40%,rgba(216,180,110,.20),rgba(95,174,156,.06) 40%,transparent 66%);
+    filter:blur(8px);pointer-events:none;z-index:0;
+  }
+  .hero .wrap{position:relative;z-index:1;max-width:920px}
+  .hero h1{font-size:clamp(2.6rem,6vw,4.9rem);margin:22px 0 26px;font-weight:400}
+  .hero p.lede{font-size:clamp(1.05rem,1.8vw,1.32rem);color:var(--muted);max-width:680px;font-weight:300}
+  .hero .cta-row{display:flex;gap:16px;flex-wrap:wrap;margin-top:38px}
+  .scrollcue{margin-top:64px;font-size:.72rem;letter-spacing:.22em;text-transform:uppercase;color:var(--muted)}
+  .scrollcue::before{content:"";display:block;width:1px;height:46px;background:linear-gradient(var(--gold),transparent);margin:0 auto 14px}
 
-  /* Hero */
-  .hero{background:linear-gradient(135deg,#0c1f3f 0%,#13294f 50%,#0f766e 140%);color:#fff;padding:70px 0 90px;position:relative;overflow:hidden}
-  .hero::after{content:"";position:absolute;right:-140px;top:-120px;width:460px;height:460px;border-radius:50%;background:radial-gradient(circle,rgba(20,184,166,.4),transparent 70%)}
-  .hero .wrap{position:relative;z-index:2;display:grid;grid-template-columns:1.15fr .85fr;gap:48px;align-items:center}
-  @media(max-width:860px){.hero .wrap{grid-template-columns:1fr;text-align:center;gap:34px}}
-  .gfi-top{margin-bottom:22px}
-  @media(max-width:860px){.gfi-top{justify-content:center;display:flex}}
-  .hero h1{font-size:2.9rem;line-height:1.08;font-weight:800;letter-spacing:-.02em}
-  .role{display:inline-block;margin-top:14px;color:var(--teal-light);font-weight:700;letter-spacing:.06em;text-transform:uppercase;font-size:.9rem}
-  .hero p.lead{font-size:1.15rem;margin-top:16px;max-width:560px;color:rgba(255,255,255,.9)}
-  @media(max-width:860px){.hero p.lead{margin-left:auto;margin-right:auto}}
-  .hero-actions{margin-top:30px;display:flex;gap:14px;flex-wrap:wrap}
-  @media(max-width:860px){.hero-actions{justify-content:center}}
+  /* SECTION SCAFFOLD */
+  section{padding:104px 0;position:relative}
+  .section-label{display:block;margin-bottom:20px}
+  .lead-2col{display:grid;grid-template-columns:1fr 1fr;gap:56px;align-items:start}
+  .prose p{color:var(--muted);margin-top:18px;font-size:1.02rem}
+  .prose strong{color:var(--text);font-weight:500}
+  .divider{height:1px;background:var(--line);margin:0}
 
-  /* Headshot with ring + success-club chip */
-  .portrait{position:relative;justify-self:center}
-  .portrait img.face{width:300px;height:300px;border-radius:50%;display:block;border:6px solid rgba(255,255,255,.9);box-shadow:0 24px 60px rgba(0,0,0,.4)}
-  .portrait .glow{position:absolute;inset:-18px;border-radius:50%;background:conic-gradient(from 180deg,var(--teal-light),var(--emerald),var(--gold),var(--teal-light));filter:blur(22px);opacity:.55;z-index:-1}
-  .sc-chip{position:absolute;bottom:6px;right:-6px;background:#fff;border-radius:14px;padding:8px 14px 8px 10px;display:flex;align-items:center;gap:8px;box-shadow:0 10px 30px rgba(0,0,0,.25)}
-  .sc-chip img{width:42px;height:42px;object-fit:cover;border-radius:8px}
-  .sc-chip b{display:block;color:var(--navy);font-size:.8rem;line-height:1.1}
-  .sc-chip span{display:block;color:var(--teal);font-size:.68rem;font-weight:700;letter-spacing:.04em;text-transform:uppercase}
-  @media(max-width:480px){.portrait img.face{width:240px;height:240px}}
+  /* CREDENTIAL STRIP */
+  .creds{display:grid;grid-template-columns:repeat(4,1fr);gap:1px;background:var(--line);border:1px solid var(--line);margin-top:62px}
+  .creds .cell{background:var(--ink);padding:28px 24px}
+  .creds h4{font-family:var(--sans);font-weight:600;font-size:.72rem;letter-spacing:.14em;text-transform:uppercase;color:var(--gold)}
+  .creds p{color:var(--muted);font-size:.9rem;margin-top:12px}
 
-  /* Milestone band */
-  .milestone{background:radial-gradient(1200px 400px at 80% -10%,rgba(20,184,166,.18),transparent),linear-gradient(180deg,#0a1a35,#0c1f3f);color:#fff;padding:70px 0;border-top:1px solid rgba(255,255,255,.06)}
-  .ms-grid{display:grid;grid-template-columns:1fr auto;gap:40px;align-items:center}
-  @media(max-width:760px){.ms-grid{grid-template-columns:1fr;text-align:center;gap:28px}}
-  .ms-kicker{color:var(--teal-light);font-weight:700;letter-spacing:.12em;text-transform:uppercase;font-size:.8rem}
-  .ms-num{font-size:4.6rem;font-weight:800;letter-spacing:-.03em;line-height:1;margin:6px 0 4px;background:linear-gradient(90deg,var(--gold),#f5d98a);-webkit-background-clip:text;background-clip:text;color:transparent}
-  @media(max-width:480px){.ms-num{font-size:3.2rem}}
-  .ms-sub{font-size:1.15rem;font-weight:600}
-  .ms-meta{margin-top:10px;color:rgba(255,255,255,.6);font-size:.9rem}
-  .ms-ring{position:relative;justify-self:center}
-  .ms-ring img{width:190px;height:190px;object-fit:cover;border-radius:20px;box-shadow:0 16px 40px rgba(0,0,0,.45)}
-  .ms-ring .cap{position:absolute;bottom:-14px;left:50%;transform:translateX(-50%);background:var(--emerald);color:#04241b;font-weight:800;font-size:.72rem;letter-spacing:.1em;text-transform:uppercase;padding:6px 14px;border-radius:999px;white-space:nowrap;box-shadow:0 8px 20px rgba(16,185,129,.4)}
+  /* PHILOSOPHY */
+  .philosophy{background:var(--ink-2)}
+  .philosophy h2{max-width:760px}
+  .pull{font-family:var(--serif);font-style:italic;font-size:clamp(1.3rem,2.4vw,1.9rem);color:var(--gold-soft);max-width:760px;margin-top:8px;line-height:1.45}
 
-  /* Section base */
-  section.block{padding:84px 0}
-  .section-head{text-align:center;max-width:680px;margin:0 auto 52px}
-  .section-head .kicker{color:var(--teal);font-weight:700;text-transform:uppercase;letter-spacing:.08em;font-size:.82rem}
-  .section-head h2{font-size:2.1rem;font-weight:800;letter-spacing:-.02em;margin-top:10px}
-  .section-head p{color:var(--slate);margin-top:14px;font-size:1.08rem}
+  /* APPROACH */
+  .approach .quote{
+    border-left:2px solid var(--gold);padding:6px 0 6px 28px;margin:34px 0;
+    font-family:var(--serif);font-style:italic;font-size:1.22rem;color:var(--text);max-width:680px;line-height:1.5;
+  }
 
-  .grid{display:grid;grid-template-columns:repeat(3,1fr);gap:22px}
-  @media(max-width:860px){.grid{grid-template-columns:1fr 1fr}}
-  @media(max-width:560px){.grid{grid-template-columns:1fr}}
-  .card{background:#fff;border:1px solid var(--line);border-radius:18px;padding:28px 24px;transition:transform .18s,box-shadow .18s}
-  .card:hover{transform:translateY(-4px);box-shadow:0 16px 40px rgba(15,118,110,.12)}
-  .card .ic{width:50px;height:50px;border-radius:14px;background:var(--mint);display:flex;align-items:center;justify-content:center;margin-bottom:16px;font-size:1.4rem}
-  .card h3{font-size:1.15rem;margin-bottom:8px}
-  .card p{color:var(--slate);font-size:.96rem}
+  /* SERVICES */
+  .services{background:var(--ink-2)}
+  .grid{display:grid;grid-template-columns:repeat(2,1fr);gap:1px;background:var(--line);border:1px solid var(--line);margin-top:54px}
+  .card{background:var(--ink);padding:38px 34px;transition:background .3s}
+  .card:hover{background:var(--panel)}
+  .card .num{font-family:var(--serif);font-size:1.1rem;color:var(--gold);opacity:.7}
+  .card h3{font-size:1.32rem;margin:14px 0 12px}
+  .card p{color:var(--muted);font-size:.96rem}
+  .tags{display:flex;flex-wrap:wrap;gap:8px;margin-top:18px}
+  .tag{font-size:.68rem;letter-spacing:.08em;text-transform:uppercase;color:var(--gold-soft);border:1px solid var(--line);padding:5px 10px;border-radius:2px}
 
-  .split{background:var(--mint)}
-  .split .wrap{display:grid;grid-template-columns:1fr 1fr;gap:54px;align-items:center}
-  @media(max-width:820px){.split .wrap{grid-template-columns:1fr;gap:34px}}
-  .split h2{font-size:2rem;font-weight:800;letter-spacing:-.02em;margin-bottom:16px}
-  .split .kicker{color:var(--green);font-weight:700;text-transform:uppercase;letter-spacing:.08em;font-size:.82rem}
-  .check{list-style:none;margin:20px 0}
-  .check li{padding:9px 0 9px 34px;position:relative;color:var(--slate)}
-  .check li::before{content:"✓";position:absolute;left:0;top:8px;color:#fff;background:var(--green);width:22px;height:22px;border-radius:50%;font-size:.8rem;display:flex;align-items:center;justify-content:center;font-weight:700}
-  .panel{background:linear-gradient(135deg,#14b8a6,#0f766e);color:#fff;border-radius:22px;padding:38px;box-shadow:0 20px 50px rgba(15,118,110,.25)}
-  .panel h3{font-size:1.4rem;margin-bottom:10px}
-  .panel ul{list-style:none;margin-top:16px}
-  .panel ul li{padding:8px 0;border-bottom:1px solid rgba(255,255,255,.18);font-weight:500}
-  .panel ul li:last-child{border-bottom:none}
+  /* TESTIMONIALS */
+  .tcard{background:var(--panel);border:1px solid var(--line);padding:34px 32px;border-radius:3px}
+  .tgrid{display:grid;grid-template-columns:repeat(3,1fr);gap:18px;margin-top:48px}
+  .tcard p{color:var(--text);font-family:var(--serif);font-style:italic;font-size:1.04rem;line-height:1.55}
+  .tcard .who{margin-top:20px;font-family:var(--sans);font-style:normal;font-size:.82rem;color:var(--gold);letter-spacing:.04em}
+  .sample-note{margin-top:18px;font-size:.78rem;color:var(--muted)}
 
-  /* About */
-  .about .wrap{display:grid;grid-template-columns:300px 1fr;gap:48px;align-items:center}
-  @media(max-width:760px){.about .wrap{grid-template-columns:1fr;text-align:center}}
-  .about-photo{position:relative;justify-self:center}
-  .about-photo img{width:260px;height:260px;border-radius:24px;object-fit:cover;box-shadow:0 16px 40px rgba(12,31,63,.25)}
-  .about h2{font-size:2rem;font-weight:800;margin-bottom:14px;letter-spacing:-.02em}
-  .about p{color:var(--slate);margin-bottom:14px}
-  .badge{display:inline-block;background:var(--mint);color:var(--teal-dark);font-weight:600;padding:6px 14px;border-radius:999px;font-size:.85rem;margin:4px 4px 0 0}
+  /* PARTNER */
+  .partner{background:var(--ink-2)}
+  .pgrid{display:grid;grid-template-columns:repeat(2,1fr);gap:1px;background:var(--line);border:1px solid var(--line);margin-top:52px}
+  .pcell{background:var(--ink);padding:38px 34px}
+  .pcell .kicker{font-size:.72rem;letter-spacing:.14em;text-transform:uppercase;color:var(--gold)}
+  .pcell h3{font-size:1.24rem;margin:14px 0 14px}
+  .pcell ul{list-style:none;margin-top:16px}
+  .pcell li{color:var(--muted);font-size:.92rem;padding-left:20px;position:relative;margin-top:9px}
+  .pcell li::before{content:"—";position:absolute;left:0;color:var(--gold)}
+
+  /* SERVE */
+  .serve-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:30px;margin-top:52px}
+  .serve h3{font-size:1.3rem;margin-bottom:12px}
+  .serve .who p{color:var(--muted);font-size:.96rem}
 
   /* CTA */
-  .cta{background:linear-gradient(135deg,#0c1f3f,#115e59);color:#fff;text-align:center;padding:86px 0}
-  .cta h2{font-size:2.2rem;font-weight:800;letter-spacing:-.02em}
-  .cta p{color:rgba(255,255,255,.85);max-width:560px;margin:16px auto 32px;font-size:1.1rem}
-  .cta-actions{display:flex;gap:16px;justify-content:center;flex-wrap:wrap}
-  .contact-line{margin-top:28px;font-size:.98rem;color:rgba(255,255,255,.8)}
-  .contact-line a{color:#5eead4;font-weight:600}
+  .cta{position:relative;text-align:center;overflow:hidden}
+  .cta .glow{position:absolute;top:50%;left:50%;transform:translate(-50%,-50%);width:780px;height:520px;
+    background:radial-gradient(circle,rgba(216,180,110,.16),transparent 64%);pointer-events:none}
+  .cta .wrap{position:relative;z-index:1;max-width:760px}
+  .cta h2{margin-bottom:18px}
+  .cta p.sub{color:var(--muted);max-width:520px;margin:0 auto 12px}
+  .contact-line{margin-top:30px;font-family:var(--serif);font-size:1.3rem;color:var(--gold-soft)}
+  .contact-line a{border-bottom:1px solid var(--line)}
+  .cta .btn{margin-top:34px}
 
-  footer{background:#0a1a35;color:rgba(255,255,255,.7);padding:34px 0;text-align:center;font-size:.9rem}
-  footer .gfi{margin-bottom:10px}
-  footer .disc{max-width:780px;margin:14px auto 0;font-size:.78rem;color:rgba(255,255,255,.45);line-height:1.5}
+  /* FOOTER */
+  footer{border-top:1px solid var(--line);background:var(--ink-2);padding:72px 0 40px}
+  .foot-top{display:grid;grid-template-columns:1.4fr 1fr 1fr;gap:40px}
+  .foot-brand .brand{margin-bottom:18px}
+  .foot-brand p{color:var(--muted);font-size:.92rem;max-width:300px}
+  .foot-name{margin-top:22px;font-size:.88rem;color:var(--text);line-height:1.8}
+  .foot-name b{font-weight:600}
+  .foot-col h5{font-size:.72rem;letter-spacing:.14em;text-transform:uppercase;color:var(--gold);margin-bottom:16px}
+  .foot-col a{display:block;color:var(--muted);font-size:.9rem;margin-top:10px}
+  .foot-col a:hover{color:var(--text)}
+  .disclaimer{margin-top:56px;padding-top:26px;border-top:1px solid var(--line);color:var(--muted);font-size:.78rem;line-height:1.7;max-width:920px}
+  .copyright{margin-top:24px;color:var(--muted);font-size:.78rem;display:flex;justify-content:space-between;flex-wrap:wrap;gap:10px}
+
+  /* REVEAL */
+  .reveal{opacity:0;transform:translateY(22px);transition:opacity .7s ease,transform .7s ease}
+  .reveal.in{opacity:1;transform:none}
+
+  @media(max-width:860px){
+    nav.links{display:none}
+    .menu-toggle{display:block}
+    .lead-2col{grid-template-columns:1fr;gap:28px}
+    .creds{grid-template-columns:repeat(2,1fr)}
+    .grid,.pgrid{grid-template-columns:1fr}
+    .tgrid,.serve-grid{grid-template-columns:1fr}
+    .foot-top{grid-template-columns:1fr}
+    section{padding:76px 0}
+  }
 </style>
 </head>
 <body>
 
-<header>
-  <div class="wrap nav">
-    <div class="nav-name">Seale&nbsp;<span>Mosle</span></div>
-    <nav class="nav-links">
-      <a href="#milestone">Milestone</a>
+<div class="demo-banner">DESIGN CONCEPT · PLACEHOLDER CONTENT · Not a live site — sample copy and dummy details (0000) for review only</div>
+
+<header class="nav">
+  <div class="wrap nav-inner">
+    <a href="#top" class="brand">
+      <span class="mark">ἐ</span>
+      <span style="display:flex;flex-direction:column;line-height:1.1">
+        <b>ENTOS</b><span>Advisory</span>
+      </span>
+    </a>
+    <nav class="links">
+      <a href="#philosophy">Philosophy</a>
+      <a href="#approach">Approach</a>
       <a href="#services">Services</a>
-      <a href="#opportunity">Opportunity</a>
-      <a href="#about">About</a>
-      <a class="nav-cta" href="#BOOKING_LINK">Book a Call</a>
+      <a href="#partner">Partner With Us</a>
+      <a href="#serve">Who We Serve</a>
     </nav>
+    <a href="#cta" class="btn">Schedule a Consultation</a>
+    <button class="menu-toggle" aria-label="menu">☰</button>
   </div>
 </header>
 
 <!-- HERO -->
-<section class="hero">
+<section class="hero" id="top" style="padding-top:96px">
+  <div class="glow"></div>
   <div class="wrap">
-    <div>
-      <div class="gfi gfi-top">
-        <span class="mark">GFI</span>
-        <span class="txt"><b>GLOBAL</b><span>FINANCIAL IMPACT</span></span>
-      </div>
-      <h1>Helping families build wealth — and helping people build their future.</h1>
-      <div class="role">Executive Marketing Director · GFI</div>
-      <p class="lead">I'm Seale Mosle. I help families protect what matters and grow their wealth, and I mentor everyday people into rewarding careers in financial services.</p>
-      <div class="hero-actions">
-        <a class="btn btn-primary" href="#BOOKING_LINK">Book a Free Consultation</a>
-        <a class="btn btn-ghost" href="#opportunity">Explore the Opportunity</a>
+    <span class="eyebrow reveal">Entos Advisory · Financial &amp; Life Strategy</span>
+    <h1 class="reveal">The wealth you're <em>searching for</em> is already inside what you've built.</h1>
+    <p class="lede reveal">Most advisors read the surface. We start with the architecture underneath — your business, your assets, your legacy — and design from the inside out.</p>
+    <div class="cta-row reveal">
+      <a href="#cta" class="btn">Schedule a Consultation</a>
+      <a href="#philosophy" class="btn ghost">Our Philosophy</a>
+    </div>
+    <div class="scrollcue reveal">Discover</div>
+  </div>
+</section>
+
+<!-- FOUNDATION -->
+<section id="foundation">
+  <div class="wrap">
+    <span class="eyebrow section-label reveal">Our Foundation</span>
+    <div class="lead-2col">
+      <h2 class="reveal">Advisory with <em>depth and precision.</em></h2>
+      <div class="prose reveal">
+        <p>Entos was built on a conviction most firms keep quiet: <strong>great financial strategy is an inside job.</strong> It begins by understanding what you've already built — what it truly costs you, what it's quietly worth, and what it could become with the right structure in place.</p>
+        <p>Our principal advisor brings a rare combination under one roof: a licensed life and annuity specialist, a hands-on operational strategist, and a fractional CFO who has guided businesses from first invoice to durable scale.</p>
+        <p>We coordinate with estate attorneys and tax counsel to deliver whole-picture counsel. <strong>You won't be handed off. You'll be known.</strong></p>
       </div>
     </div>
-    <div class="portrait">
-      <div class="glow"></div>
-      <img class="face" src="seale-headshot.png" alt="Seale Mosle, Executive Marketing Director at Global Financial Impact">
-      <div class="sc-chip">
-        <img src="success-club-ring.png" alt="GFI Success Club">
-        <div><b>Success Club</b><span>Member</span></div>
-      </div>
+    <div class="creds">
+      <div class="cell reveal"><h4>Licensed</h4><p>Independent life &amp; annuity authority — access to top-rated carriers with no captive obligation.</p></div>
+      <div class="cell reveal"><h4>Recognized</h4><p>Complex multi-year reconciliations and ledger restoration for businesses that need a clean foundation.</p></div>
+      <div class="cell reveal"><h4>Technology</h4><p>QuickBooks Online design and training — chart of accounts, cash policy, owner-facing reporting.</p></div>
+      <div class="cell reveal"><h4>Leadership</h4><p>Interim and fractional CFO — cash flow architecture and decision-ready forecasting on demand.</p></div>
     </div>
   </div>
 </section>
 
-<!-- MILESTONE -->
-<section class="milestone" id="milestone">
-  <div class="wrap ms-grid">
-    <div>
-      <div class="ms-kicker">Money Milestone · GFI</div>
-      <div class="ms-num" id="counter" data-target="250000">$0</div>
-      <div class="ms-sub">in personal cashflow over the last 12 months</div>
-      <div class="ms-meta">Recognized March 2026 · GFI Success Club</div>
+<div class="divider"></div>
+
+<!-- PHILOSOPHY -->
+<section class="philosophy" id="philosophy">
+  <div class="wrap">
+    <span class="eyebrow section-label reveal">ἐντός · Within · Closest to the Center</span>
+    <h2 class="reveal">Most advisors look outward. <em>We look inside.</em></h2>
+    <div class="prose reveal" style="max-width:760px">
+      <p>The tax-advantaged growth no one designed on purpose. The estate that transfers inefficiently because the funding never matched the documents. The business whose books don't reflect what was actually built. The retirement account that becomes a tax burden for the next generation because no one looked closely enough.</p>
     </div>
-    <div class="ms-ring">
-      <img src="success-club-ring.png" alt="GFI Success Club ring">
-      <span class="cap">Success Club</span>
+    <p class="pull reveal">We look inside. That's what Entos Advisory is built to do — to find the spring that's already there, within what you've built, and put it to work.</p>
+  </div>
+</section>
+
+<div class="divider"></div>
+
+<!-- APPROACH -->
+<section class="approach" id="approach">
+  <div class="wrap">
+    <span class="eyebrow section-label reveal">The Entos Approach to Insurance Design</span>
+    <div class="lead-2col">
+      <h2 class="reveal">Most agents design for <em>commission.</em> We design for <em>accumulation.</em></h2>
+      <div class="prose reveal">
+        <p>Indexed life insurance is one of the most misunderstood instruments in personal finance. Designed around a commission, a policy can be over-insured relative to premium, weighed down by internal costs, and structured to quietly erode the very cash value it promises to build.</p>
+        <p>Designed around the strategy, the same instrument behaves entirely differently — funded for maximum accumulation, with minimal insurance cost, working as a genuinely tax-advantaged vehicle. <strong>We show you exactly where that difference comes from, in dollars, before you sign anything.</strong></p>
+      </div>
+    </div>
+    <p class="quote reveal">"Every recommendation begins with the strategy and works backward to the instrument. The carrier comes last. The product comes last. Your situation comes first — always."</p>
+    <div class="cta-row reveal">
+      <a href="#services" class="btn ghost">Explore What We Do</a>
     </div>
   </div>
 </section>
 
 <!-- SERVICES -->
-<section class="block" id="services">
+<section class="services" id="services">
   <div class="wrap">
-    <div class="section-head">
-      <div class="kicker">For Families &amp; Individuals</div>
-      <h2>Financial strategies tailored to your life</h2>
-      <p>Through Global Financial Impact, I help you put a clear, personalized plan in place — built around education, not pressure.</p>
-    </div>
+    <span class="eyebrow section-label reveal">What We Do</span>
+    <h2 class="reveal">Comprehensive strategy. <em>Uncompromised execution.</em></h2>
     <div class="grid">
-      <div class="card"><div class="ic">🛡️</div><h3>Life Insurance</h3><p>Protect your family's income and legacy with coverage matched to your real needs and budget.</p></div>
-      <div class="card"><div class="ic">🌅</div><h3>Retirement Income</h3><p>Strategies designed to turn savings into reliable income you won't outlive.</p></div>
-      <div class="card"><div class="ic">📈</div><h3>Wealth Building</h3><p>Smart, long-term approaches to help your money grow and work harder for you.</p></div>
-      <div class="card"><div class="ic">🎓</div><h3>College Savings</h3><p>Plan ahead for education costs so the next generation starts strong.</p></div>
-      <div class="card"><div class="ic">🔒</div><h3>Asset Protection</h3><p>Safeguard what you've built with the right mix of strategy and insurance solutions.</p></div>
-      <div class="card"><div class="ic">🧭</div><h3>Financial Guidance</h3><p>A clear, jargon-free roadmap so you always understand the "why" behind every move.</p></div>
+      <div class="card reveal"><span class="num">01</span><h3>Life Insurance &amp; Annuity Strategy</h3><p>Tax-advantaged accumulation, income protection, and estate positioning using properly structured products — shaped by your plan, not a carrier's commission.</p><div class="tags"><span class="tag">Retirement Income</span><span class="tag">Tax Strategy</span><span class="tag">Legacy</span></div></div>
+      <div class="card reveal"><span class="num">02</span><h3>Retirement Income Architecture</h3><p>Lifetime income strategies that reduce tax drag, protect principal, and create sustainable distributions — integrating annuities with existing retirement accounts.</p><div class="tags"><span class="tag">IRA Integration</span><span class="tag">Income Planning</span><span class="tag">Tax Efficiency</span></div></div>
+      <div class="card reveal"><span class="num">03</span><h3>Legacy &amp; Estate Advisory</h3><p>Structuring the transfer of wealth with intention. We coordinate with estate attorneys so your legacy moves efficiently, privately, and exactly as you intend.</p><div class="tags"><span class="tag">Estate Strategy</span><span class="tag">Wealth Transfer</span><span class="tag">Life Insurance</span></div></div>
+      <div class="card reveal"><span class="num">04</span><h3>Complex Accounting Cleanup</h3><p>Multi-year reconciliations, catch-up bookkeeping, and financial restatements. We assess your accounting environment and restore order to ledgers that have resisted resolution.</p><div class="tags"><span class="tag">Multi-Year Cleanup</span><span class="tag">Reconciliation</span><span class="tag">Onsite</span></div></div>
+      <div class="card reveal"><span class="num">05</span><h3>Financial Systems &amp; QBO</h3><p>We design, implement, and optimize QuickBooks Online — chart of accounts, cash policy, and KPI dashboards — and train your team to own their numbers.</p><div class="tags"><span class="tag">QBO Design</span><span class="tag">Cash Policy</span><span class="tag">Training</span></div></div>
+      <div class="card reveal"><span class="num">06</span><h3>Fractional &amp; Interim CFO</h3><p>C-suite financial leadership without a full-time hire. Reporting, cash flow architecture, decision-ready forecasting, and the steady hand of an experienced executive.</p><div class="tags"><span class="tag">Strategic Finance</span><span class="tag">Forecasting</span><span class="tag">Leadership</span></div></div>
+      <div class="card reveal"><span class="num">07</span><h3>Startup Advisory &amp; Formation</h3><p>From entity formation and financial infrastructure to operational readiness — we help founders negotiate terms, evaluate lending, and build a foundation that scales.</p><div class="tags"><span class="tag">Entity Setup</span><span class="tag">Contracts</span><span class="tag">Lending</span></div></div>
+      <div class="card reveal"><span class="num">08</span><h3>Onsite Operations Review</h3><p>We come to you. End-to-end review of premises, workflows, and accounting processes — identifying gaps and installing the controls that give leadership a real-time picture.</p><div class="tags"><span class="tag">Process Design</span><span class="tag">Controls</span><span class="tag">Metrics</span></div></div>
     </div>
   </div>
 </section>
 
-<!-- OPPORTUNITY -->
-<section class="block split" id="opportunity">
+<!-- TESTIMONIALS -->
+<section id="testimonials">
   <div class="wrap">
-    <div>
-      <div class="kicker">Join My Team</div>
-      <h2>Build your own business in financial services</h2>
-      <p style="color:var(--slate)">Looking for more than a job? GFI offers a platform to build your own practice — with mentorship, training, and a path that rewards what you put in. No prior experience required; I'll help you get licensed and grow.</p>
-      <ul class="check">
-        <li>Flexible, part-time or full-time — work on your terms</li>
-        <li>Hands-on mentorship and a proven training system</li>
-        <li>Help families while building real income and ownership</li>
-        <li>Learn from a leader who's earned GFI Success Club recognition</li>
-      </ul>
-      <a class="btn btn-dark" href="#BOOKING_LINK">Schedule an Intro Call</a>
+    <span class="eyebrow section-label reveal">Client &amp; Partner Voices</span>
+    <h2 class="reveal">The relationship <em>speaks for itself.</em></h2>
+    <div class="tgrid">
+      <div class="tcard reveal"><p>"Sample testimonial — replace with a real client quote. Describe the outcome the client experienced and the specific value they found in working with the firm."</p><div class="who">Sample Client · Pre-Retiree</div></div>
+      <div class="tcard reveal"><p>"Sample testimonial — placeholder text for layout review only. A second client voice would sit here, ideally covering a different service line than the first."</p><div class="who">Sample Client · Business Owner</div></div>
+      <div class="tcard reveal"><p>"Sample testimonial — dummy content. Real, attributed quotes can be added once collected with the client's permission."</p><div class="who">Sample Client · Estate Planning</div></div>
     </div>
-    <div class="panel">
-      <h3>Who thrives here</h3>
-      <p style="color:rgba(255,255,255,.9)">People who want purpose and growth — not a ceiling.</p>
-      <ul>
-        <li>Career changers ready for something meaningful</li>
-        <li>Entrepreneurs who want to own their future</li>
-        <li>Side-hustlers building toward full-time</li>
-        <li>Anyone who loves helping people win with money</li>
-      </ul>
+    <p class="sample-note reveal">These are clearly-labeled placeholder quotes for design review — no real client testimonials are shown.</p>
+  </div>
+</section>
+
+<!-- PARTNER -->
+<section class="partner" id="partner">
+  <div class="wrap">
+    <span class="eyebrow section-label reveal">Professional Alliances &amp; Partnerships</span>
+    <h2 class="reveal">For professionals who serve <em>at the highest level.</em></h2>
+    <div class="pgrid">
+      <div class="pcell reveal"><span class="kicker">Estate &amp; Tax Attorneys</span><h3>The advisory layer your clients are missing</h3><p style="color:var(--muted);font-size:.94rem">Your clients have the documents. They may not have the funding strategy that makes those documents work.</p><ul><li>Trust funding strategy and carrier placement</li><li>IRA maximization and inherited-IRA planning</li><li>Survivorship life for estate equalization</li><li>Coordination with your existing documents</li></ul></div>
+      <div class="pcell reveal"><span class="kicker">CPA Firms &amp; Tax Strategists</span><h3>The implementation your strategy requires</h3><p style="color:var(--muted);font-size:.94rem">You identify the tax problem. We design the instrument that solves it — properly, with the accounting intelligence to match.</p><ul><li>Tax-advantaged product design aligned to strategy</li><li>Business insurance structured around P&amp;L reality</li><li>Fractional CFO coordination for shared clients</li><li>Accounting cleanup for clients who need it first</li></ul></div>
+      <div class="pcell reveal"><span class="kicker">Family Offices &amp; Wealth Advisors</span><h3>Insurance depth without the conflict</h3><p style="color:var(--muted);font-size:.94rem">Independent licensed infrastructure to execute the strategies complex clients need — with no AUM conflict.</p><ul><li>Premium finance for high-net-worth clients</li><li>Complex annuity strategy and carrier negotiation</li><li>White-label CFO and accounting advisory</li><li>Discreet, principal-to-principal engagement</li></ul></div>
+      <div class="pcell reveal"><span class="kicker">Credentialed Insurance Professionals</span><h3>A home for advisors at this level</h3><p style="color:var(--muted);font-size:.94rem">A selective team of experienced specialists — not a downline. Boutique infrastructure, shared standard of excellence.</p><ul><li>Full carrier access through elite relationships</li><li>Case design and advanced-markets support</li><li>A brand and standard you're proud to represent</li><li>Direct principal access — no layers</li></ul></div>
     </div>
   </div>
 </section>
 
-<!-- ABOUT -->
-<section class="block about" id="about">
+<!-- WHO WE SERVE -->
+<section class="serve" id="serve">
   <div class="wrap">
-    <div class="about-photo">
-      <img src="seale-headshot.png" alt="Seale Mosle">
-      <div style="margin-top:16px"><span class="badge">Executive Marketing Director</span><span class="badge">GFI Success Club</span></div>
-    </div>
-    <div>
-      <h2>About Seale Mosle</h2>
-      <p>As Executive Marketing Director with Global Financial Impact, I'm passionate about one thing: helping people make confident financial decisions. Whether you're protecting your family, planning for retirement, or building wealth for the future, my role is to educate and guide — never to pressure.</p>
-      <p>That same drive earned me GFI Success Club recognition and a Money Milestone of $250,000 in personal cashflow over the last 12 months — proof of a model that works when you put people first. I love opening that same door for others, helping motivated people start and grow their own financial services business with real mentorship behind them.</p>
-      <a class="btn btn-dark" href="#BOOKING_LINK" style="margin-top:8px">Let's Connect</a>
+    <span class="eyebrow section-label reveal">Who We Serve</span>
+    <h2 class="reveal">The clients who find us <em>rarely look elsewhere again.</em></h2>
+    <div class="serve-grid">
+      <div class="who reveal"><h3>The Business Owner</h3><p>You've built something real — and the books don't reflect it. You need a partner who can restore clarity, install the right systems, and be the strategic financial voice you've been missing.</p></div>
+      <div class="who reveal"><h3>The Pre-Retiree</h3><p>You're within ten years of retirement and have done well — but conventional planning feels thin. You need tax-advantaged strategy, lifetime income design, and an advisor who understands what's at stake.</p></div>
+      <div class="who reveal"><h3>The High Earner</h3><p>You're earning where standard planning leaves money on the table. Phase-outs, plan limits, tax exposure — you need an advisor fluent in the instruments that operate above those ceilings.</p></div>
     </div>
   </div>
 </section>
 
 <!-- CTA -->
-<section class="cta" id="contact">
+<section class="cta" id="cta">
+  <div class="glow"></div>
   <div class="wrap">
-    <h2>Ready to take the next step?</h2>
-    <p>Book a free, no-obligation conversation. We'll talk through your goals — financial, professional, or both — and figure out the best path forward.</p>
-    <div class="cta-actions">
-      <a class="btn btn-primary" href="#BOOKING_LINK">Book Your Free Call</a>
-      <a class="btn btn-ghost" href="mailto:EMAIL_PLACEHOLDER">Email Me</a>
+    <span class="eyebrow reveal">Begin</span>
+    <h2 class="reveal" style="margin-top:16px">The right conversation changes <em>everything.</em></h2>
+    <p class="sub reveal">Schedule a confidential strategy consultation. No obligation — only clarity. Every inquiry is reviewed personally before we respond.</p>
+    <div class="contact-line reveal">
+      <a href="mailto:0000">0000</a> &nbsp;·&nbsp; <a href="tel:0000">(000) 000-0000</a>
     </div>
-    <div class="contact-line">
-      Call or text: <a href="tel:PHONE_PLACEHOLDER">[PHONE]</a> &nbsp;·&nbsp; Email: <a href="mailto:EMAIL_PLACEHOLDER">[EMAIL]</a>
-    </div>
+    <a href="#0000" class="btn reveal">Schedule a Consultation</a>
+    <p class="sub reveal" style="margin-top:22px;font-size:.82rem">All information is held in strict confidence.</p>
   </div>
 </section>
 
+<!-- FOOTER -->
 <footer>
   <div class="wrap">
-    <div class="gfi" style="justify-content:center">
-      <span class="mark">GFI</span>
-      <span class="txt"><b>GLOBAL</b><span>FINANCIAL IMPACT</span></span>
+    <div class="foot-top">
+      <div class="foot-brand">
+        <a href="#top" class="brand"><span class="mark">ἐ</span><span style="display:flex;flex-direction:column;line-height:1.1"><b>ENTOS</b><span>Advisory</span></span></a>
+        <p>Wealth illuminated from within. Legacy built to endure.</p>
+        <div class="foot-name">
+          <b>[Founder Name]</b><br>
+          Founder &amp; Principal Advisor<br>
+          Licensed Life &amp; Annuity Agent<br>
+          National Producer Number (NPN): 0000<br>
+          State License No.: 0000
+        </div>
+      </div>
+      <div class="foot-col">
+        <h5>Services</h5>
+        <a href="#services">Life &amp; Annuity Strategy</a>
+        <a href="#services">Retirement &amp; Legacy</a>
+        <a href="#services">Accounting Cleanup</a>
+        <a href="#services">QBO Implementation</a>
+        <a href="#services">Fractional CFO</a>
+      </div>
+      <div class="foot-col">
+        <h5>Firm</h5>
+        <a href="#philosophy">Our Philosophy</a>
+        <a href="#approach">Our Approach</a>
+        <a href="#partner">Partner With Us</a>
+        <a href="#serve">Who We Serve</a>
+        <a href="#cta">Schedule a Consultation</a>
+      </div>
     </div>
-    <div>Seale Mosle · Executive Marketing Director</div>
-    <div style="margin-top:10px">&copy; <span id="yr"></span> Seale Mosle. All rights reserved.</div>
-    <div class="disc">This website is for general informational purposes only and does not constitute financial, tax, or legal advice. Insurance and financial products are offered through licensed professionals affiliated with Global Financial Impact. The $250,000 figure reflects personal cashflow recognized by GFI and is not a guarantee or projection of results; individual results vary. Availability of products and services may vary by state. Please consult a licensed professional regarding your specific situation.</div>
+    <p class="disclaimer">
+      Design concept — placeholder content only. Personal and regulatory details are shown as <strong>0000</strong> and are not real. Life insurance and annuity products would be offered through properly licensed and rated carriers. This concept does not offer securities or registered investment advisory services. For informational and design-review purposes only; it does not constitute tax, legal, or investment advice.
+    </p>
+    <div class="copyright">
+      <span>© 2026 Entos Advisory — design concept. All rights reserved.</span>
+      <span>Privacy · Disclosures · Terms of Engagement</span>
+    </div>
   </div>
 </footer>
 
 <script>
-  document.getElementById('yr').textContent=new Date().getFullYear();
-  (function(){
-    var el=document.getElementById('counter');
-    var target=+el.getAttribute('data-target');
-    var fmt=function(n){return '$'+Math.round(n).toLocaleString('en-US');};
-    var started=false;
-    function run(){
-      if(started) return; started=true;
-      var dur=1600, t0=null;
-      function step(ts){
-        if(!t0)t0=ts;
-        var p=Math.min((ts-t0)/dur,1);
-        var eased=1-Math.pow(1-p,3);
-        el.textContent=fmt(target*eased);
-        if(p<1)requestAnimationFrame(step);
-      }
-      requestAnimationFrame(step);
-    }
-    var io=new IntersectionObserver(function(e){e.forEach(function(x){if(x.isIntersecting)run();});},{threshold:.4});
+  // Scroll reveal
+  const io=new IntersectionObserver((entries)=>{
+    entries.forEach(e=>{if(e.isIntersecting){e.target.classList.add('in');io.unobserve(e.target);}});
+  },{threshold:.12});
+  document.querySelectorAll('.reveal').forEach((el,i)=>{
+    el.style.transitionDelay=(i%4*60)+'ms';
     io.observe(el);
-  })();
+  });
+  // Mobile menu (simple anchor reveal)
+  document.querySelector('.menu-toggle').addEventListener('click',()=>{
+    const l=document.querySelector('nav.links');
+    l.style.display = l.style.display==='flex' ? 'none' : 'flex';
+    l.style.position='absolute';l.style.flexDirection='column';l.style.top='74px';
+    l.style.right='28px';l.style.background='var(--panel)';l.style.padding='18px 22px';
+    l.style.border='1px solid var(--line)';l.style.gap='14px';
+  });
 </script>
 </body>
 </html>
